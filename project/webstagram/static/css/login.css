@@ -1,0 +1,72 @@
+*{
+    background-color: #fafafa;
+}
+
+a{
+    text-decoration: none;
+}
+
+.login_container{
+    background-color: white;
+    border : 1px solid #dbdbdb;
+    width: 300px;
+    height: 330px;
+    margin: 100px auto 0 auto;
+    padding:40px;
+}
+
+.instagramText{
+    background-color: white;  
+    display:block;
+    margin: 40px auto;
+}
+
+.userLogin{
+    width:279px;
+    padding: 13px;
+    margin-top:10px;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    border:1px solid #dbdbdb;
+}
+
+#loginButton{ 
+    background-color: #0095f6;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    width:300px;
+    height:32px;
+    margin-top:20px;
+    color:white;
+    font-weight:bold;
+    opacity: 0.3;
+}
+
+.join_container{
+    margin:10px auto;
+}
+
+.joinInsta{
+    background-color: white;
+    width:380px;
+    border: 1px solid #dbdbdb;
+    margin: 10px auto 0 auto;
+    text-align:center;
+}
+
+.join{
+    background-color: white;
+    padding:10px auto;
+    font-size:15px;
+}
+
+.joinBtn{
+    background-color: white;
+    border:none;
+    color:#06ABFE;
+    font-size:15px;
+    font-weight:bolder;
+}
+
+
+

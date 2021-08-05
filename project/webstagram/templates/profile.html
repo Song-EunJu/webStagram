@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Instagram</title>
+    <link href="{% static 'css/profile.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+</head>
+<body>
+    <header>
+        <div class="profilePhoto">
+            <button id="photoBtn">
+                <img class="profileImg" src="{% static 'img/ssu_likelion_logo_150x150.png' %}" alt="프로필 사진"/>
+            </button>
+        </div>
+        
+        <div class="profileDetail">
+            <div class="profileEdit">
+                <h1>LikeLionSSU</h1>
+                <button class="editBtn">프로필 편집</button>
+            </div>
+    
+            <div class="profileInfo">
+                <ul>
+                    <li>000 게시물</li>
+                    <li>000 팔로워</li>
+                    <li>000 팔로잉</li>
+                </ul>
+            </div>
+            <div class="profileMsg">
+                <p class="message">hello world</p>
+            </div>
+        </div>
+        
+    </header>
+    <main> 
+        <img class="postImg" src="{% static 'img/lionface.png' %}" alt="게시물 사진"/>
+        <ul aria-hidden="true">
+            <li>Likes: 0</li>
+            <li>Comments: 0</li>
+        </ul>
+        <img class="postImg" src="{% static 'img/lionface.png' %}" alt="게시물 사진"/>
+        <ul aria-hidden="true">
+            <li>Likes: 0</li>
+            <li>Comments: 0</li>
+        </ul>
+        <img class="postImg" src="{% static 'img/lionface.png' %}" alt="게시물 사진"/>
+        <ul aria-hidden="true">
+            <li>Likes: 0</li>
+            <li>Comments: 0</li>
+        </ul>
+    </main> 
+</body>
+</html>

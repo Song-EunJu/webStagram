@@ -1,0 +1,56 @@
+*{
+    background-color: #f0efef;
+}
+
+.cardView {
+    width:500px;
+    height:700px;
+    margin:0 auto;
+}
+
+.userNickName{
+    background-color: white;
+    padding:10px;
+}
+
+.cardInfo, .comment, .comment_form{
+    background-color: white;
+}
+
+.cardImage img{
+    width:500px;
+}
+
+.cardInfo{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+}
+
+.infoLeft, .infoRight{
+    background-color: white;
+}
+
+.cardInfo img{
+    background-color: white;
+    width:30px;
+    height:30px;
+}
+
+.comment{
+    padding-bottom:10px;
+}
+
+.comment_form{
+    margin-top:5px;
+}
+
+form{
+    background-color: white;
+}
+
+input {
+    background-color: white;
+    border:none;
+    padding:5px;
+}

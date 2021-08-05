@@ -1,0 +1,76 @@
+* {
+    background-color: #fafafa;
+}
+
+header{
+    width:1000px;
+    height:200px;
+    margin:70px auto 0px auto;
+    display:flex;
+    flex-direction: row;
+}
+/* profilePhoto  */
+
+#photoBtn{
+    border:none;
+}
+
+.profileImg{
+    padding:30px;
+    border-radius:70%;
+}
+/*  profileDetail  */
+.profileDetail{
+    padding-left:150px;
+    display:flex;
+    flex-direction: column;
+}
+
+.profileEdit{
+    display:flex;
+    flex-direction: row;
+}
+
+.editBtn{
+    height:30px;
+    margin:auto 20px;
+    background-color: #e9e8e8;
+    font-weight: bold;
+    padding:5px 24px;
+    border-radius:3px;
+    border:1.5px solid #bdbdbd;
+}
+
+.profileInfo ul li{
+    list-style-type: none;
+    display:inline-block;
+    padding:10px;
+}
+
+.profileMsg{
+    display:flex;
+    font-weight: bold;
+}
+
+/*  main  */
+main{
+    width:900px;
+    height:300px;
+    margin:50px auto 70px auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+main ul li{
+    display:none;
+}
+
+.postImg:hover {
+    filter: opacity(0.7) drop-shadow(0 0 0 black);
+}
+
+.postImg:hover > ul{
+    display:flex;
+    text-align: center;
+} 
