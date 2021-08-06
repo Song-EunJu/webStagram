@@ -11,9 +11,13 @@
 <body>
     <div class="login_container">
         <img class="instagramText" src="{% static 'img/logo_text.png' %}" alt="instagramText">
-        <input type="text" class="userLogin" placeholder="전화번호, 사용자 이름 또는 이메일">
-        <input type="password" class="userLogin" placeholder="비밀번호">
-        <button id="loginButton" disabled>로그인</button>
+        
+        <form action="{% url 'login' %}" methods="POST">
+            <input type="text" class="userLogin" name="id" placeholder="아이디">
+            <input type="password" class="userLogin" name="password" placeholder="비밀번호">
+            <button id="loginButton" type="submit">로그인</button>
+        </form>
+        
     </div>
     <div class="join_container">
         <footer class="joinInsta">

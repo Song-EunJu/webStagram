@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+
         <div class="profilePhoto">
             <button id="photoBtn">
                 <img class="profileImg" src="{% static 'img/ssu_likelion_logo_150x150.png' %}" alt="프로필 사진"/>
@@ -18,7 +19,7 @@
         
         <div class="profileDetail">
             <div class="profileEdit">
-                <h1>LikeLionSSU</h1>
+                <h1>{{writer.nickname}}</h1>
                 <button class="editBtn">프로필 편집</button>
             </div>
     

@@ -16,7 +16,7 @@
                 <img class="faviconFrame" src="{% static 'img/line_favicon.png' %}" alt="인스타 로고"/>
             </div>
             <div class="line">
-                <img class="logo" src="{% static 'img/logo_text.png' %}" alt="인스타 글씨"/>
+                <a href="{% url 'feed' %}"><img class="logo" src="{% static 'img/logo_text.png' %}" alt="인스타 글씨"/></a>
             </div>
         </div>
         <div class="right_box">
@@ -25,9 +25,9 @@
             </div>
             <div class="myInfo_box">
                 {% if user.is_authenticated %}
-                    <p>{{new_user.name}}</p>>
+                    <p>{{new_user.name}}</p>
                 {% endif %}
-                <img class="myInfo" src="{% static 'img/myinfo.png' %}" alt="내 프로필"/>
+                <a href="{% url 'profile' new_user.username %}"><img class="myInfo" src="{% static 'img/myinfo.png' %}" alt="내 프로필"/></a>
             </div>
         </div>
     </header>
