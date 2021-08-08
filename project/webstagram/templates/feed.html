@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 
-<head>
-    {% load static %}
-    {% block extrahead %}
-    <link href="{% static 'css/feed.css' %}" rel="stylesheet" type="text/css" />
-    {% endblock %}
-</head>
+{% load static %}
+{% block extrahead %}
+<link href="{% static 'css/feed.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
 
 {% block content %}
     <div class="main">
@@ -13,7 +11,7 @@
             <div class="cardView">
                 <header>
                     {% if user.is_authenticated %}
-                    <div class="userNickName">{{new_user.nickname}}</div>
+                    <div class="userNickName">{{user.nickname}}</div>
                     {% endif %}
                 </header>
 

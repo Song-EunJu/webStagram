@@ -10,7 +10,7 @@ def login_view(request):
         user = authenticate(request=request, username=id, password=password)
         if user is not None:  # 유저가 있는 경우
             login(request, user)   
-            return render(request, 'feed.html', {'user':user})
+        return render(request, 'feed.html', {'user':user})
         # else: # 유저가 없는경우
         #     return 
         #     messages.info(request, '사용자의 정보가 없습니다')

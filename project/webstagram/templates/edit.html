@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block extrahead %}
+<link href="{% static 'css/edit.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block content %}
+
+<div class="topbar">
+
+    <div class="profilePhoto">
+        <button id="photoBtn">
+            {% if user.profileImg %}
+            <img class="profileImg" src="{{ user.profileImg.url}}" alt="프로필 사진">
+            {% endif %}
+            <p>프로필 사진 : <input type="file" name="image"></p>
+        </button>
+    </div>
+    
+    <form action = "{% url 'update' user.username %}" method="POST">
+        {% csrf_token %}
+        <div class="profileDetail">
+            <div class="profileEdit">
+                <h1><input type="text" name="nickname" value="{{user.nickname}}"></h1>
+                <a href="{% url 'update' user.username %}"><button class="editBtn">프로필 편집 완료</button></a>
+            </div>
+
+            <div class="profileMsg">
+                <p class="message"><input type="text" name="message" value="{{user.profileMsg}}"></p>
+            </div>
+        </div>
+    </form>
+
+</div>
+{% endblock %}

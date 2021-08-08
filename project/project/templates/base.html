@@ -27,7 +27,7 @@
                 {% if user.is_authenticated %}
                     <p>{{new_user.name}}</p>
                 {% endif %}
-                <a href="{% url 'profile' new_user.username %}"><img class="myInfo" src="{% static 'img/myinfo.png' %}" alt="내 프로필"/></a>
+                <a href="{% url 'profile' user.username %}"><img class="myInfo" src="{% static 'img/myinfo.png' %}" alt="내 프로필"/></a>
             </div>
         </div>
     </header>

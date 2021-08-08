@@ -12,12 +12,12 @@
     <div class="login_container">
         <img class="instagramText" src="{% static 'img/logo_text.png' %}" alt="instagramText">
         
-        <form action="{% url 'login' %}" methods="POST">
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
             <input type="text" class="userLogin" name="id" placeholder="아이디">
             <input type="password" class="userLogin" name="password" placeholder="비밀번호">
             <button id="loginButton" type="submit">로그인</button>
-        </form>
-        
+        </form>    
     </div>
     <div class="join_container">
         <footer class="joinInsta">
